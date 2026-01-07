@@ -56,7 +56,7 @@ header {
     
     &:hover {
       color: var(--cor-primaria);
-      
+      cursor: pointer;
       &::after {
         width: 100%;
       }
