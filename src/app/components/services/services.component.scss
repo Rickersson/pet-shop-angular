@@ -1,0 +1,45 @@
+.services {
+  background-color: var(--cor-clara);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background-color: var(--cor-branco);
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.service-icon {
+  background-color: var(--cor-secundaria);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  
+  i {
+    font-size: 28px;
+    color: var(--cor-primaria);
+  }
+}
+
+.service-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}

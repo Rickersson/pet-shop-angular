@@ -1,1 +1,111 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #8a7f6c;
+  --cor-secundaria: #d4c9b9;
+  --cor-clara: #f5f1eb;
+  --cor-escura: #5a5347;
+  --cor-texto: #333333;
+  --cor-branco: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--cor-texto);
+  background-color: var(--cor-clara);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  padding: 80px 0;
+  
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: var(--cor-escura);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Botões */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: 2px solid var(--cor-primaria);
+  cursor: pointer;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: transparent;
+    color: var(--cor-primaria);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 127, 108, 0.2);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  
+  h3 {
+    font-size: 2.2rem;
+    display: inline-block;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background-color: var(--cor-primaria);
+    }
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+/* Imagens responsivas */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
